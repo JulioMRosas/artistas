@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/libs/prisma";
 
-export const GET = async ({ params: {id} }) => {
+export const GET = async (request, { params: {id} }) => {
     const artist = await prisma.artist.findFirst({
         where: {
             id: parseInt(id)
@@ -29,7 +29,7 @@ export const PUT = async (request, { params: {id} }) => {
     return NextResponse.json(updatedArtist);
 }
 
-export const DELETE = async ({ params: {id} }) => {
+export const DELETE = async (request, { params: {id} }) => {
     const deletedArtist = await prisma.artist.delete({
         where: {
             id: parseInt(id)
