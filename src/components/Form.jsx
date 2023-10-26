@@ -41,7 +41,7 @@ const Form = () => {
           <input type="text" placeholder='ej. 21' id='age' className='p-2 rounded-md border border-[#ccc]' value={age} onChange={e => setAge(e.target.value)}/>
       </div>
       <div className='flex flex-col space-y-3'>
-          <label htmlFor="band" className='text-[#333]'>Banda o bandas de las que forma parte</label>
+          <label htmlFor="band" className='text-[#333]'>Banda o bandas</label>
           <input type="text" placeholder='ej. Cannibal Corpse' id='band' className='p-2 rounded-md border border-[#ccc]' value={band} onChange={e => setBand(e.target.value)}/>
       </div>
       <div className='flex flex-col space-y-3'>
