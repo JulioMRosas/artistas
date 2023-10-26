@@ -11,14 +11,14 @@ const Header = () => {
   return (
     <>
       {/* Normal menu */}
-      <header className='hidden sm:grid grid-cols-3 p-6 bg-[#DDDDDD]'>
+      <header className='hidden sm:grid grid-cols-3 p-6 bg-[#DDDDDD] text-[#333]'>
           <Link href={"../"} className='justify-self-center'>Inicio</Link>
           <Link href={"../register"} className='justify-self-center'>Registrar</Link>
           <Link href={"../consult"} className='justify-self-center'>Ver Registros</Link>
       </header>
 
       {/* Responsive menu */}
-      <Popover className='sm:hidden p-6 bg-[#DDDDDD]'>
+      <Popover className='sm:hidden p-6 bg-[#DDDDDD] text-[#333]'>
         <Popover.Button>
           <MenuIcon />
         </Popover.Button>

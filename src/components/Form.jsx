@@ -25,8 +25,8 @@ const Form = () => {
     }
 
     await addArtist(artist);
-    resetFields(artist);
-  }
+/*     resetFields(artist);
+ */  }
 
   return <>
     <form className='w-[50%] mt-14 mb-32 space-y-5'>
