@@ -29,7 +29,7 @@ const Form = () => {
   }
 
   return <>
-    <form className='w-[50%] mt-14 mb-20 space-y-5'>
+    <form className='w-[50%] mt-14 mb-32 space-y-5'>
       <h2 className='text-center text-[#333]'>Registra a un artista!</h2>
       <div className='border-dotted border-b-2 border-[#ccc]'></div>
       <div className='flex flex-col space-y-3'>
